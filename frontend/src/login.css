@@ -1,0 +1,156 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #4b79a1, #283e51);
+  height: 100vh;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-box {
+  background: #fff;
+  padding: 30px;
+  width: 330px;
+  border-radius: 12px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+.login-box h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* --- Inputs --- */
+.login-box input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  box-sizing: border-box; /* Prevents input from being wider than container */
+}
+
+/* --- Submit Button (The Big Blue Button) --- */
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background: #4b79a1;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 15px;
+}
+
+.submit-btn:hover {
+  background: #35516a;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* --- Password Wrapper & Eye Icon --- */
+.password-wrapper {
+  position: relative; /* Keeps the eye inside this box */
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.password-wrapper input {
+  margin: 0; /* Reset margin so it fits perfectly */
+  padding-right: 40px; /* Make space for the eye icon */
+}
+
+/* The Eye Button - Made Transparent */
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%); /* Centers perfectly vertically */
+  background: none !important; /* Force transparent background */
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  padding: 0;
+  color: #666;
+  outline: none;
+}
+
+.toggle-password:hover {
+  color: #333;
+}
+
+/* --- Strength Bar Section --- */
+.strength-section {
+  margin-top: 20px;
+  text-align: left;
+  color: #333;
+}
+
+.strength-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.strength-bar-container {
+  width: 100%;
+  height: 8px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  margin-top: 8px;
+  overflow: hidden;
+}
+
+.strength-bar-fill {
+  height: 100%;
+  transition: width 0.4s ease-in-out, background-color 0.3s ease;
+}
+
+.feedback-list {
+  margin-top: 10px;
+  padding-left: 20px;
+  font-size: 13px;
+  color: #555;
+}
+
+/* --- Dashboard (Success Screen) --- */
+.dashboard {
+  text-align: center;
+  padding: 40px;
+  color: white;
+  background: rgba(255, 255, 255, 0.15); /* Glass Effect */
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 15px;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  width: 350px;
+}
+
+.logout-btn {
+  background-color: #ff4b4b;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.logout-btn:hover {
+  background-color: #d43f3f;
+}
